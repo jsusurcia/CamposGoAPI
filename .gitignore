@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.pyrightconfig.json
+
+# Environment variables
+.env
+.env.local
+
+# Uploads / Media (ajusta según necesites)
+uploads/*
+!uploads/.gitkeep
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database (si usas SQLite local)
+*.db
+*.sqlite
+*.sqlite3
+
