@@ -1,10 +1,19 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 from conexionBD import Conexion
 import pymysql
 
 from routes.routes_usuario import ws_usuario
 
 app = Flask(__name__)
+
+CORS(
+    app,
+    supports_credentials=True,
+    allow_headers=["Content-Type", "Authorization"],
+    methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+)
+
 app.register_blueprint(ws_usuario)
 
 @app.route('/')
